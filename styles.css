@@ -1,0 +1,645 @@
+/* ZONA TESTER:  activem borders de les peces per debugar */
+ 
+/*
+    * {    
+        border-style: solid;   
+        border-width: 0.2px;     
+        border-color: hotpink;  
+    }
+*/
+
+/* ANALISIS de Breakpoints de mides: 
+
+     0px < Watch-hand unic  < 350px 
+   350px < Mobile-Portrait  < 667px 
+   667px < Mobile-Landscape < 768px 
+   768px < Tablet-Portrait  < 890px 
+   890px < Tablet-Landscape < 992px 
+   992px < PC-Monitor       < 1200px
+   1200  < TV-Screen        < 1600px  
+
+/* ----- GENERAL STYLES ----- */
+#content {    
+    min-width: 150px;
+    max-width: 768px;
+    height: 645px;    /*  <-- height iPhone SE */
+}
+
+#header-mark::before{
+    content: "iWatch size < 350";
+}
+
+.watch-flex-col-around{
+    display: flex;              
+    flex-direction: column;          
+    justify-content: space-around;    
+}
+
+.watch-flex-col-evenly{
+    display: flex;              
+    flex-direction: column;          
+    justify-content: space-evenly; 
+}
+
+.flex-col-around {
+/* .flex-vertical { */
+    display: flex;              
+    flex-direction: column;          
+    justify-content: space-around;     
+}
+
+/* ----- ZONA FOOTER -----*/
+
+header {
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+    background-color: black;
+    margin-bottom: 20px;
+    /* display: flex; */
+    /* height: 85px; */
+}
+
+nav {
+    background-color: #eed461;
+    height: 30px;
+}
+
+/* para pantalla medida iWatch ocultamos el nav y el aside  */
+#hgroup-navigate, aside {
+    display: none;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-85 {
+    height: 85%;
+}
+.h-20 {
+    height: 20px;
+}
+
+.h-headers {
+    height: 50px;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.h-header-200-365-230 {
+    height: 200px;
+}
+
+hgroup {    
+    background-color: #40465a;
+    margin-bottom: 35px;
+    border-style: inset;
+    border-width: 15px;
+    /* display: flex; */    
+}
+
+hgroup>div{
+    height: 50px;
+}
+
+.hgroup-border{
+    /* .border-25-solid-gray { */
+    border-style: solid;
+    border-color: #40465a;
+    border-width: 5px;
+}
+
+.border-25-solid-orange {
+    border-style: solid;
+    border-color: rgb(243, 143, 44);
+    border-width: 35px;
+}
+
+.border-25{
+    border-top-width: 25px;
+    border-right-width: 25px;
+    border-left-width: 25px;
+    border-bottom-width: 25px;
+}
+
+header .elem {
+    background-color: darkslategrey;
+    text-align: center;    
+    color: aquamarine;
+    height: 30px;
+}
+
+header .time::before {
+    content: "11:05 a.m.";
+}
+
+.flex-horizontal {
+    display: flex;              
+    flex-direction: row;          
+    justify-content: space-between;
+}
+
+.lateral {
+    width: 100%;
+    border-color: #40465a;
+}
+
+.central {
+    width: 100%;
+    border-color: #40465a
+}
+
+#header-sup {
+    background-color: #40465a;
+    border-color: #40465a;
+    border-width: 10px;
+    border-style: solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#header-inf {
+    border-color: #e47e3b;
+    border-width: 10px;
+    border-style: solid;
+    background-color: #eed461;
+    margin: 0px;
+}
+
+#header-left {
+    background-color: #fd5353;
+    border-color: #40465a;
+    border-width: 10px;
+}
+
+#header-center {
+    background-color: #fd5353;
+    border-color: #40465a;
+    border-width: 10px;
+}
+
+#header-right {
+    background-color: #fd5353;
+    border-color: #40465a;
+    border-width: 10px;
+}
+
+#header-center-inf {
+    background-color: #eed461;
+    border-color: #e47e3b;
+    border-width: 10px;
+}
+
+/* ----- ZONA MAIN -----*/
+
+main {
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+    /* cambiar border-width a 3% per watch  */
+    margin-bottom: 20px;
+    /* height: 425px; */    
+    background-color: yellow
+}
+
+section {
+    width: 100%;
+    /* border-width: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    border-style: solid;
+    border-color: darkslategrey;
+    background-color: darkslategrey;
+    border-width: 25px;  
+    /* cambiar el border-width para watch o iPhone */
+    width: 100%; 
+    height: 30px;  
+    /* height: 55px;    */
+    flex-wrap: wrap;
+}
+
+.art-corto {
+    width: 45%;
+    background-color: rgb(93, 142, 142);
+}
+
+.art-largo {
+    width: 100%;
+    background-color:rgb(115, 197, 197);
+}
+
+.h-main-425-520 {
+    height: 425px;
+}
+
+main > article > section {
+    width: 100%;
+    background-color: #40465a;
+}
+
+/* ----- ZONA FOOTER -----*/
+
+footer {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px;
+    margin-bottom: 5px;
+    background-color: black;
+    width: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+footer > p {
+    background-color: #eed461;
+    border-width: 0px;    
+    margin: 0 0 0 20px;
+    width: 88%;
+    height: 30px;    
+}
+
+.aside-item {
+    margin-top: 5px;
+}
+
+
+/* =============================================================== */
+/* =============================================================== */
+
+/* ----- MOBILES STYLES 350px - 768px ----- */
+
+@media screen and (min-width: 350px) and (orientation: portrait) {
+    /* and (max-width: 768px)  */
+
+    /* ----- GENERAL ----- */
+    .mobile-flex-col-between {
+        display: flex;              
+        flex-direction: column;          
+        justify-content: space-between;   
+    }
+    .mobile-flex-vertical-dalt {
+        display: flex;
+        flex-direction: column;
+        align-self: auto;
+        justify-content: space-around;
+        /* align-items: flex-start; */
+    }
+
+    /* ---- HEADERS ------ */
+
+    #header-mark::before{
+        content: "Mobile-portrait > 350";
+    }
+    header{
+        border-width: 35px;
+    }
+    header .elem{
+        background-color: #fd5353;
+    }
+    header .time::before {
+        content: "";
+    }
+
+    .h-header-200-365-230 {
+        height: 365px;
+    }
+
+    .h-headers{
+        height: 30px;
+    }
+
+        #hgroup-navigate, aside {
+            display: block;
+            height: 50px;
+        }
+        
+        hgroup {
+            display: flex;
+            border-style: solid;
+            border-width: 35px;
+            border-color: #40465a;
+        }
+    
+    
+    /* ---- MAIN ------ */
+    main{
+        border-color: yellow;
+        border-width: 35px;
+        /* height: 450px; */
+    }
+
+        .h-main-425-520 {
+            height: 520px;
+        }
+        
+        section{
+            display: flex;
+            border-style: solid;
+            border-width: 0px;        
+            border-color: darkslategrey;   
+            height: 60%; 
+        }
+            article {
+                border-width: 38px;    
+            }
+            .sm-flex-2-cols {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }            
+            .sm-flex-1-col, .flex-1-col {
+                display: flex;
+                align-self: auto;
+                height: 30px;
+            }
+            .art-corto, .art-largo{
+                height: 30px;
+                margin-bottom: 30px;
+            }
+
+        aside {
+            width: 100%;
+            background-color: #fd5353;
+            height: 130px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+            .aside-item{
+                color: rgb(197, 119, 11);
+                margin: 0px 7px 7px 25px;
+                height: 30px;
+                margin-top: 5px;
+                width: 90%;
+            }
+
+            aside > div {
+                margin-left: 10px;
+                margin-right:10px;
+                margin-top: 12px;
+                margin-bottom: 12px;
+                height: 90px;
+                width: auto;                        
+            }
+        
+        
+                aside > div > p {
+                    background-color: rgb(242, 160, 45);
+                    margin: 0px 7px 7px 7px;
+                }                
+
+    footer > p {
+        width: 88%;
+    }
+}
+
+/* smartphone landscape */
+@media screen and (min-width: 350px) and (max-width: 768px) and (orientation: landscape) {
+
+    /* ---- HEADERS ------ */
+
+    #header-mark::before{
+        content: "Mobile-landscape > 350";
+    }
+
+    header .elem{
+        background-color: lightgreen;
+        color: black;
+    }
+
+    header{
+        border-width: 35px;
+    }
+    header .elem{
+        background-color: #fd5353;
+    }
+    header .time::before {
+        content: "";
+    }
+
+    #hgroup-navigate, aside {
+        display: block;
+        height: 50px;
+    }
+
+    /* .hgroup-border{
+        border-width: 35px;
+    } */
+    hgroup {
+        display: flex;
+        border-style: solid;
+        border-width: 35px;
+        border-color: #40465a;
+    }
+    .h-header-200-365-230 {
+        height: 365px;
+    }
+
+    .h-headers{
+        height: 30px;
+    }
+    .mobile-flex-col-between {
+        display: flex;              
+        flex-direction: column;          
+        justify-content: space-between;   
+    }
+
+    /* ---- MAIN ------ */
+
+    main{
+        border-color: yellow;
+        border-width: 35px;
+        /* height: 450px; */
+    }
+
+    .h-main-425-520 {
+        height: 520px;
+    }
+    
+    section{
+        display: flex;
+        border-style: solid;
+        border-width: 0px;        
+        border-color: darkslategrey;   
+        height: 65%; 
+    }
+
+        article {
+            border-width: 35px;    
+        }
+            .md-flex-2-cols {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }            
+            .md-flex-1-col, .flex-1-col {
+                display: flex;
+                align-self: auto;
+                height: 30px;
+            }
+            .art-corto, .art-largo{
+                height: 30px;
+                margin-bottom: 30px;
+            }
+
+    aside {
+        width: 100%;
+        background-color: #fd5353;
+        height: 130px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    aside > div {
+        margin-left: 10px;
+        margin-right:10px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        height: 90px;
+        width: auto;                        
+    }
+    
+    .aside-item{
+        color: rgb(197, 119, 11);
+        margin: 0px 7px 7px 25px;
+        height: 30px;
+        margin-top: 5px;
+        width: 91%;
+    }
+    aside > div > p {
+        background-color: rgb(242, 160, 45);
+        margin: 0px 7px 7px 7px;
+    }
+    .mobile-flex-vertical-dalt {
+        display: flex;
+        flex-direction: column;
+        align-self: auto;
+        justify-content: space-around;
+        /* align-items: flex-start; */
+    }
+
+    footer > p {
+        width: 93%;
+    }
+}
+
+/* =============================================================== */
+/* =============================================================== */
+
+/* ----- TABLETS STYLES 768px - 992px ----- */
+
+@media screen and (min-width: 768px) and (max-width: 890px) and (orientation: portrait) {
+    
+    /* ----- HEADERS ----- */ 
+
+    #header-mark::before{
+        content: "Tablets-portrait > 768";
+    }
+    header .elem{
+        background-color: #fd5353;
+    }    
+
+    .tablet-flex-row-between {
+        display: flex;              
+        flex-direction: row;          
+        justify-content: space-between;
+        color:aqua;
+    }
+
+    .lateral {
+        width: 15%;
+        border-color: #40465a;
+    }
+    
+    .central {
+        width: 65%;
+        border-color: #40465a
+    }
+
+    .h-header-200-365-230 {
+        height: 230px;
+    }
+
+    /* ----- MAIN ----- */ 
+
+    .flex-2-cols {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .flex-1-col {
+        display: flex;
+        align-self: auto;
+        height: 35px;
+    }
+
+    aside > div {        
+        height: 145px;  
+        width: 100%;
+        align-self: left;
+        margin-top: 10px;  
+    }
+    footer > p {
+        width: 94%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+
+    #header-mark::before{
+        content: "Tablets-landscape > 890";
+    }
+    header .elem{
+        background-color: lightgreen;
+    }
+}
+
+/* =============================================================== */
+/* =============================================================== */
+
+/* ----- DESKTOP STYLES 1200px ----- */
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+    #header-mark::before{
+        content: "DESKTOP SIZE > 1200px";
+    }
+    header .elem{
+        background-color: lightpink;
+    }
+    #content{
+        height: 360px; 
+    }
+}
+
+/* ----- TVISION STYLES 1400px ----- */
+
+@media screen and (min-width: 1500px) {
+    #header-mark::before{
+        content: "TELEVISION SCREEN SIZE > 1500px";
+    }
+    header .elem{
+        background-color: yellow;
+    }
+    #content {            
+        max-width: 1600px;
+        height: 360px; 
+    }
+
+}

@@ -350,7 +350,7 @@ footer > p {
             border-style: solid;
             border-width: 0px;        
             border-color: darkslategrey;   
-            height: 60%; 
+            height: 70%; 
         }
             article {
                 border-width: 38px; 
@@ -383,7 +383,7 @@ footer > p {
             width: 100%;
             background-color: #fd5353;
             height: 130px;
-            margin-top: 50px;
+            margin-top: 35px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -484,7 +484,7 @@ footer > p {
         border-style: solid;
         border-width: 0px;        
         border-color: darkslategrey;   
-        height: 65%; 
+        height: 55%; 
     }
 
         article {
@@ -505,13 +505,13 @@ footer > p {
                 margin-bottom: 30px;
             }
             .art-corto{
-                width: 50%;
+                width: 47%;
             }
 
     aside {
         width: 100%;
         background-color: #fd5353;
-        height: 130px;
+        height: 190px;
         margin-top: 50px;
         display: flex;
         flex-direction: column;

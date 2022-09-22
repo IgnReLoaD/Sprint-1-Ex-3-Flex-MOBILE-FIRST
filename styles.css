@@ -222,6 +222,7 @@ main {
 
 section {
     width: 100%;
+    height: 30%;
     /* border-width: 20px; */
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +235,7 @@ article {
     border-width: 25px;  
     /* cambiar el border-width para watch o iPhone */
     width: 100%; 
-    height: 100px;  
+    height: 92px;  
     /* display: flex;
     flex-wrap: wrap; */
 }
@@ -255,6 +256,7 @@ article {
     .art-largo {
         width: 100%;
         height: 35px;
+        margin-top: 8%;
         background-color:rgb(115, 197, 197);
     }
 
@@ -275,8 +277,8 @@ footer {
 footer > p {
     background-color: #eed461;
     border-width: 0px;    
-    margin: 0 0 0 20px;
-    width: 88%;
+    margin: 0 5px 0 5px;
+    width: 100%;
     height: 30px;    
 }
 
@@ -303,8 +305,7 @@ footer > p {
         display: flex;
         flex-direction: column;
         align-self: auto;
-        justify-content: space-around;
-        /* align-items: flex-start; */
+        justify-content: space-between;
     }
 
     /* ---- HEADERS ------ */
@@ -362,7 +363,7 @@ footer > p {
             height: 70%; 
         }
             article {
-                border-width: 38px; 
+                border-width: 36px; 
                 height: 55px; 
                 width: 100%;  
             }
@@ -379,30 +380,40 @@ footer > p {
                 align-self: auto;
                 height: 30px;
             }
-            .art-corto {                 
+            .art-corto {
+                width: 100%;
+                height: 30px;
+                margin-bottom: 32px;
+                margin-top: 0px;
+                background-color: rgb(93, 142, 142);
+            }
+            /* .art-corto {                 
                 width: 48%;                
                 height: 30px;
-                margin-bottom: 35px;
-            }
+                margin-bottom: 35px; 
+            }  */
             .art-largo{
                 width: 100%;
-                }            
+                height: 30px;
+                margin-top: 1%;
+                background-color: rgb(115, 197, 197);
+            }            
 
         aside {
             width: 100%;
             background-color: #fd5353;
             height: 130px;
-            margin-top: 35px;
+            margin-top: 40px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
         }
             .aside-item{
                 color: rgb(197, 119, 11);
-                margin: 0px 7px 7px 25px;
+                margin: 0px 27px 0px 27px;
                 height: 30px;
                 margin-top: 5px;
-                width: 87%;
+                /* width: 87%; */
             }
 
             aside > div {
@@ -421,8 +432,15 @@ footer > p {
                 }                
 
     footer > p {
-        width: 92%;
+        background-color: #eed461;
+        border-width: 0px;    
+        margin: 0 20px 0 20px;
+        width: 100%;
+        height: 30px;    
     }
+    /* footer > p {
+        width: 88%;
+    } */
 }
 
 /* smartphone landscape */
@@ -454,9 +472,6 @@ footer > p {
         height: 50px;
     }
 
-    /* .hgroup-border{
-        border-width: 35px;
-    } */
     hgroup {
         display: flex;
         border-style: solid;
@@ -502,7 +517,7 @@ footer > p {
             .md-flex-2-cols {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: center;
             }            
             .md-flex-1-col, .flex-1-col {
                 display: flex;
@@ -514,7 +529,7 @@ footer > p {
                 margin-bottom: 30px;
             }
             .art-corto{
-                width: 47%;
+                width: 100%;
             }
 
     aside {

@@ -201,8 +201,8 @@ header .time::before {
 
 /* ----- ZONA MAIN -----*/
 
-.h-main-425-520 {
-    height: 425px;
+.h-main-425-520-340 {
+    height: 520px;
 }
 
 main > article > section {
@@ -597,7 +597,9 @@ footer > p {
     header .elem{
         background-color: #fd5353;
     }    
-    
+    .h-header-items {
+        height: 20px;
+    }
     .hgroup-md-h-30{
         height: 30%;
     }
@@ -642,12 +644,50 @@ footer > p {
     
     /* ----- MAIN ----- */ 
 
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: yellow;
+        border-color: yellow;
+        height: 300px;
+    }
+    .h-main-425-520-340{
+        height: 340px;
+    }
+    main > section {
+        height: 150px;        
+        border-style: solid;
+        border-color: #4b5470;
+        border-width: 20px;
+    }
+
+    main > section > article {
+        width: 100%;
+        height: 50px;   
+        background-color: #4b5470;
+    }
+    article{
+        /* border-color: #4b5470;
+        background-color: #4b5470; */
+        border-width: 0px;
+    }
+    .art-corto {
+        width: 48%;
+        background-color: #1465b1;
+    }
     .md-flex-2-cols {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: #4b5470;
         border-color: #4b5470;        
+    }
+    .art-largo {
+        width: 100%;
+        height: 30px;
+        margin-top: 12px;
+        background-color: #79b0e4;
     }
 
     /* .flex-2-cols {
@@ -657,19 +697,45 @@ footer > p {
     } */
     
     .flex-1-col {
-        display: flex;
+        display: flex;        
         align-self: auto;
         height: 35px;
+        background-color: #fd5353;
     }
-
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 115px;
+        margin-top: 15px;
+        background-color: #fd5353;
+    }
     aside > div {        
-        height: 145px;  
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        height: 90px;
+        width: auto;        
+        /* height: 145px;  
         width: 100%;
         align-self: left;
-        margin-top: 10px;  
+        margin-top: 10px;   */
+    }
+    .aside-item{
+        background-color: #eed461;
+        height: 30px;
+        margin-top: 8px;
+        width: 97%;
+        margin-left: 10px;
+    }
+    footer {
+        display: block;
+        height: 50px;
     }
     footer > p {
-        width: 94%;
+        width: 96%;
+        margin: 10px;
     }
 }
 

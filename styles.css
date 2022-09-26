@@ -201,7 +201,7 @@ header .time::before {
 
 /* ----- ZONA MAIN -----*/
 
-.h-main-425-520-340 {
+.h-main-425-520-340-150 {
     height: 520px;
 }
 
@@ -652,7 +652,7 @@ footer > p {
         border-color: yellow;
         height: 300px;
     }
-    .h-main-425-520-340{
+    .h-main-425-520-340-150{
         height: 340px;
     }
     main > section {
@@ -741,13 +741,141 @@ footer > p {
 
 /* tablets landscape */
 
-@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+@media screen and (min-width: 848px) and (max-width: 1200px) and (orientation: landscape) {
 
     #header-mark::before{
-        content: "Tablets-landscape > 890";
+        content: "Tablets-LANDSCAPE > 890";
+        color: yellow;
     }
     header .elem{
-        background-color: lightgreen;
+        background-color: #fd5353;
+    }
+    .h-header-items {
+        height: 20px;
+    }
+    .hgroup-md-h-30{
+        height: 30%;
+    }
+    .tablet-flex-row-between {
+        display: flex;              
+        flex-direction: row;          
+        justify-content: space-between;
+        color:aqua;
+    }
+    .lateral {
+        width: 15%;
+        border-color: #4b5470;
+    }    
+    .central {
+        width: 65%;
+        border-color: #4b5470;
+    }
+    .h-header-xs-200-sm-365-md-100 {
+        height: 100px;
+    }
+    #hgroup-branding {
+        background-color: #40465a;
+        border-color: #40465a;
+        border-width: 10px;
+        border-style: solid;
+        margin: 0px;
+    }    
+    #hgroup-navigate {
+        border-color: #e47e3b;
+        border-width: 10px;
+        border-style: solid;
+        background-color: #eed461;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    /* ----- MAIN ----- */ 
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: yellow;
+        border-color: yellow;
+        height: 300px;
+    }
+    .h-main-425-520-340-150{
+        height: 340px;
+    }
+    main > section {
+        height: 150px;        
+        border-style: solid;
+        border-color: #4b5470;
+        border-width: 20px;
+    }
+
+    main > section > article {
+        width: 100%;
+        height: 50px;   
+        background-color: #4b5470;
+    }
+    article{
+        /* border-color: #4b5470;
+        background-color: #4b5470; */
+        border-width: 0px;
+    }
+    .art-corto {
+        width: 48%;
+        background-color: #1465b1;
+    }
+    .md-flex-2-cols {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #4b5470;
+        border-color: #4b5470;        
+    }
+    .art-largo {
+        width: 100%;
+        height: 30px;
+        margin-top: 12px;
+        background-color: #79b0e4;
+    }
+    .flex-1-col {
+        display: flex;        
+        align-self: auto;
+        height: 35px;
+        background-color: #fd5353;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 115px;
+        margin-top: 15px;
+        background-color: #fd5353;
+    }
+    aside > div {        
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        height: 90px;
+        width: auto;        
+        /* height: 145px;  
+        width: 100%;
+        align-self: left;
+        margin-top: 10px;   */
+    }
+    .aside-item{
+        background-color: #eed461;
+        height: 30px;
+        margin-top: 8px;
+        width: 97%;
+        margin-left: 10px;
+    }
+    footer {
+        display: block;
+        height: 50px;
+    }
+    footer > p {
+        width: 96%;
+        margin: 10px;
     }
 }
 
@@ -759,23 +887,168 @@ footer > p {
 @media screen and (min-width: 1200px) and (max-width: 1499px) {
     #header-mark::before{
         content: "DESKTOP SIZE > 1200px";
-    }
-    header .elem{
-        background-color: lightpink;
-    }
+        color: yellow;
+    }    
     #content{
         height: 360px; 
+        min-width: 890px;
+        max-width: 992px;
+    }
+    header .elem{
+        background-color: #fd5353;
+    }
+    .h-header-items {
+        height: 20px;
+    }
+    .hgroup-md-h-30{
+        height: 30%;
+    }
+    .tablet-flex-row-between {
+        display: flex;              
+        flex-direction: row;          
+        justify-content: space-between;
+        color:aqua;
+    }
+    .lateral {
+        width: 15%;
+        border-color: #4b5470;
+    }    
+    .central {
+        width: 65%;
+        border-color: #4b5470;
+    }
+    .h-header-xs-200-sm-365-md-100 {
+        height: 100px;
+    }
+    #hgroup-branding {
+        background-color: #40465a;
+        border-color: #40465a;
+        border-width: 10px;
+        border-style: solid;
+        margin: 0px;
+    }    
+    #hgroup-navigate {
+        border-color: #e47e3b;
+        border-width: 10px;
+        border-style: solid;
+        background-color: #eed461;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    /* ----- MAIN ----- */ 
+
+    main {
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+
+        background-color: black;
+        border-color: black;
+        height: 300px;
+    }
+    .h-main-425-520-340-150{
+        height: 150px;
+    }
+    main > section {
+        border-style: solid;
+        border-color: #40465a;
+        background-color: #40465a;
+        border-width: 15px;
+        width: 63%;
+        height: 110px;
+
+        /* height: 150px;        
+        border-style: solid;
+        border-color: #4b5470;
+        border-width: 20px; */
+    }
+
+    main > section > article {
+        width: 100%;
+        height: 40px;   
+        background-color: #4b5470;
+    }
+    article{
+        /* border-color: #4b5470;
+        background-color: #4b5470; */
+        border-width: 0px;
+    }
+    .art-corto {
+        width: 48%;
+        height: 25px;
+        background-color: #1465b1;
+        margin-top: 0px;
+    }
+    .md-flex-2-cols {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #4b5470;
+        border-color: #4b5470;        
+    }
+    .art-largo {
+        width: 100%;
+        height: 25px;
+        margin-top: 0px;;
+        background-color: #79b0e4;
+    }
+    .flex-1-col {
+        display: flex;        
+        align-self: auto;
+        height: 35px;
+        background-color: #fd5353;
+    }    
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        background-color: #fd5353;        
+        margin-top: 0px;        
+        width: 31%;
+        height: 140px;
+    }
+    aside > div {        
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        height: 90px;
+        width: auto;        
+        /* height: 145px;  
+        width: 100%;
+        align-self: left;
+        margin-top: 10px;   */
+    }
+    .aside-item{
+        background-color: #eed461;
+        height: 30px;
+        margin-top: 8px;
+        width: 97%;
+        margin-left: 10px;
+    }
+    footer {
+        display: block;
+        height: 50px;
+    }
+    footer > p {
+        width: 96%;
+        margin: 10px;
     }
 }
+
 
 /* ----- TVISION STYLES 1400px ----- */
 
 @media screen and (min-width: 1500px) {
     #header-mark::before{
         content: "TELEVISION SCREEN SIZE > 1500px";
+        color: yellow;
     }
     header .elem{
-        background-color: yellow;
+        background-color: #fd5353;
     }
     #content {            
         max-width: 1600px;
